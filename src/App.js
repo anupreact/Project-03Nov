@@ -18,6 +18,11 @@ function App() {
       <Router>
         <Navbar />
           <div className="main">
+
+            important reference ---- https://www.free-css.com/free-css-templates/page261/lighten
+           <br /><br />
+
+            painters web template ---- https://www.free-css.com/free-css-templates/page284/painter
         <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
