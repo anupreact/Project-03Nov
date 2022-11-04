@@ -1,4 +1,111 @@
-.Footer{
-    h1{
-        color:rgb(0, 174, 255)    }
+footer {
+  background: rgb(21, 54, 81);
+  color: white;
+  display: flex;
+  padding: 0.7rem;
+  gap: 1rem;
+  section {
+    width: 20%;
+    padding: 1rem 0 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    &.left {
+      .logo {
+        .logo-img {
+          text-shadow: 12px;
+        }
+      }
+      .info {
+        color: gray;
+      }
+      .links {
+        display: flex;
+        gap: 1rem;
+        cursor:pointer span {
+          padding: 0.3rem;
+          background: #000;
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    &.right {
+      flex: 2;
+      p:nth-child(1) {
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+
+      p:nth-child(2) {
+        color: gray;
+        font-size: 1rem;
+        font-weight: lighter;
+        margin-right: .7rem;
+      }
+      input {
+        background: transparent;
+        border: 1px solid gray;
+        padding: 0.4rem 1rem;
+        width: 80%;
+        outline: none;
+        border-radius: 4px;
+        color: white;
+      }
+      button {
+        width: 50%;
+        background: rgb(160, 210, 232);
+        border-radius: 10px;
+        border: none;
+        padding: 0.4rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.3s ease all;
+        &:hover {
+          background: rgb(69, 182, 231);
+        }
+      }
+    }
+  }
+  .linkss {
+    flex: 2;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    section {
+      width: 40%;
+      p {
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        span {
+          color: gray;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  footer {
+    flex-direction: column !important;
+    section {
+      width: 100%;
+      &.mid-1,
+      &.mid-2 {
+        width: 50%;
+      }
+    }
+  }
 }
