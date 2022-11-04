@@ -7,9 +7,10 @@ const Footer = () => {
     <>
       <footer className="footer">
         <section className="left">
-          <div className="logo">
+          {/* <div className="logo">
             <div className="logo-img">Inox Panda</div>
-          </div>
+          </div> */}
+          <p>Logo</p>
           <div className="info">
             001 Main Street, Times building, London, New York
           </div>
@@ -53,7 +54,7 @@ const Footer = () => {
             </div>
           </section>
         </div>
-        
+
         <section className="right">
           <p>Newsletter</p>
           <p>

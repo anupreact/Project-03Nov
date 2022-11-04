@@ -9,7 +9,7 @@ footer {
     padding: 1rem 0 0 1rem;
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    gap: .8rem;
     flex-wrap: wrap;
     &.left {
       .logo {
@@ -25,7 +25,6 @@ footer {
         gap: 1rem;
         cursor:pointer span {
           padding: 0.3rem;
-          background: #000;
           width: 1rem;
           height: 1rem;
           border-radius: 50%;
@@ -39,7 +38,8 @@ footer {
     &.right {
       flex: 2;
       p:nth-child(1) {
-        font-size: 1.3rem;
+        color:rgb(222, 222, 222);
+        font-size: 1.2rem;
         font-weight: 500;
       }
 
@@ -73,17 +73,20 @@ footer {
           background: rgb(69, 182, 231);
         }
       }
+   
     }
   }
   .linkss {
     flex: 2;
     display: flex;
-    gap: 1rem;
+    // gap: 1rem;
     justify-content: center;
     section {
+
       width: 40%;
       p {
-        font-size: 1.3rem;
+        color:rgb(222, 222, 222);
+        font-size: 1.2rem;
         font-weight: 500;
       }
       div {
