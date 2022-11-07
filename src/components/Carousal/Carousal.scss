@@ -1,0 +1,12 @@
+.Containar {
+  background: rgb(255, 255, 255);
+  .slider {
+    display: flex;
+    justify-content: center;
+    background: #000;
+    .slick-prev:before,
+    .slick-next:before {
+      color: green !important;
+    }
+  }
+}

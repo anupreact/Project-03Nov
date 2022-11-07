@@ -29,11 +29,11 @@
         color: white;
         transition: 0.3s all;
         &:hover{
-          color: red;
+          color: rgb(239, 33, 112);
         }
       }
       a.active{
-        color:red;
+        color: rgb(239, 33, 112);
       }
     }
   }

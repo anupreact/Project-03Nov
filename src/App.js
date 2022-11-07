@@ -9,6 +9,8 @@ import Services from "./pages/Services/Services";
 import Products from "./pages/Products/Products";
 import Contact from "./pages/Contact/Contact";
 import NotFound from "./pages/NotFound/NotFound";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -19,10 +21,11 @@ function App() {
         <Navbar />
           <div className="main">
 
-            important reference ---- https://www.free-css.com/free-css-templates/page261/lighten
+            {/* important reference ---- https://www.free-css.com/free-css-templates/page261/lighten
            <br /><br />
+          
 
-            painters web template ---- https://www.free-css.com/free-css-templates/page284/painter
+            painters web template ---- https://www.free-css.com/free-css-templates/page284/painter */}
         <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
