@@ -136,6 +136,32 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      <div className="info">
+        <h2>Meet The Director</h2>
+        <div className="content-row">
+          <div className="left">
+            <div className="quote">
+              <span>  “We, 50 tea lovers, 100 identical technoids, endless ideas, earning 1000’s of hearts with one purpose in mind: to serve technology.” Yes, we are veracious, and we are WPWeb, a tech enthusiast!</span>
+
+              <div className="post">
+                <span>Name</span>
+                <span>Post</span>
+              </div>
+
+              <div className="social">
+                <span>Face</span>
+                <span>Insta</span>
+                <span>Linked</span>
+                <span>Twitter</span>
+              </div>
+            </div>
+          </div>
+          <div className="right">
+            <img src="" alt="not found" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
