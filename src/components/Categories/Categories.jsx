@@ -6,12 +6,18 @@ import cfan from "../../images/cfan.png";
 import gyesers from "../../images/gyesers.png";
 import series from "../../images/series.png";
 
-const Categories = () => {
+const Categories = (props) => {
+  const {heading} = props
   return (
     <div className="Categories">
-      <div className="heading">
-        <span>Featured Categories</span>
-      </div>
+      {
+        heading ? (
+          <div className="heading">
+          <span>{heading}</span>
+        </div>
+        ) : ""
+      }
+     
       <div className="wrapper">
         <div className="cards-container">
           <div className="cards">

@@ -1,8 +1,13 @@
 import React from "react";
+import PageCover from "../../components/PageCover/PageCover";
 import "./Products.scss";
+import ProductComponent from "../../components/Products/Products"
 const Products = () => {
   return (
     <div className="Products">
+
+      <PageCover heading={"Products"}/>
+      <ProductComponent/>
       <h1> A Product Header Which can include a breadcrumb</h1>
       <br />
       <br />

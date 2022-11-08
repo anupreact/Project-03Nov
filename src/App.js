@@ -13,28 +13,29 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ScrollToTop from "./components/Scroll/ScrollToTop";
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
-          <div className="main">
-
-            {/* important reference ---- https://www.free-css.com/free-css-templates/page261/lighten
+        <ScrollToTop />
+        <div className="main">
+          {/* important reference ---- https://www.free-css.com/free-css-templates/page261/lighten
            <br /><br />
           
 
             painters web template ---- https://www.free-css.com/free-css-templates/page284/painter */}
-        <Routes>
+          <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/products" element={<Products />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
-        </Routes>
-          </div>
+          </Routes>
+        </div>
         <Footer />
       </Router>
     </>

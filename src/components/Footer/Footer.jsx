@@ -10,7 +10,7 @@ const Footer = () => {
           {/* <div className="logo">
             <div className="logo-img">Inox Panda</div>
           </div> */}
-          <p>Logo</p>
+          <p>Anand Electronics</p>
           <div className="info">
             001 Main Street, Times building, London, New York
           </div>

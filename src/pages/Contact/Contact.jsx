@@ -1,18 +1,15 @@
 import React from "react";
 import "./Contact.scss";
+import PageCover from "../../components/PageCover/PageCover"
+import ContactComp from "../../components/Contact/Contact";
+import NewContact from "../../components/NewContact/NewContact";
 
 const Contact = () => {
   return (
     <div className="Contact">
-      <h1>A google map location can be added</h1>
-      <br />
-      <br />
-      <br />
-      <h1> A contact information with address, contacts and social links ,</h1>
-      <br />
-      <br />
-      <br />
-      <h1>And A contact form</h1>
+      <PageCover heading={"Contact"}/>
+      <NewContact/> 
+      {/* <ContactComp/> */}
     </div>
   );
 };

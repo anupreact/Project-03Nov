@@ -12,21 +12,16 @@ const Home = () => {
   return (
     <div className="Home">
       <Carousal />
-      <br />
-      <Services />
-
-      <Categories />
-      <Products />
-      <Testimonial />
-      <br />
-      <Brands/>
-      <Contact/>
-
-
+      <Services heading={"Our Services"}/>
+      <Categories heading={"Featured Categories"} />
+      <Products heading={"Featured Products"} />
+      <Testimonial heading={"Testimonials"} />
+      <Brands heading={"Trusted Brands"} />
+      <Contact heading={"Contact Us"} />
 
       {/* REFERENCE ------ https://freehtml5.co/preview/?item=solution-free-bootstrap-4-agency-template */}
 
-{/*  
+      {/*  
       <br />
       <br />
       <br />

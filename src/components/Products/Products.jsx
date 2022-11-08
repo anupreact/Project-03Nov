@@ -2,12 +2,18 @@ import React from "react";
 import "./Products.scss";
 import cFan from "../../images/cfan.png";
 
-const Products = () => {
+const Products = (props) => {
+  const {heading} = props
+
   return (
     <div className="Products">
-      <div className="heading">
-        <span>Featured Products</span>
-      </div>
+     {
+        heading ? (
+          <div className="heading">
+          <span>{heading}</span>
+        </div>
+        ) : ""
+      }
 
       <div className="wrapper">
         <div className="container">

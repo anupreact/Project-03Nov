@@ -3,13 +3,18 @@ import "./Services.scss";
 import services1 from "../../images/services1.png";
 import services2 from "../../images/services2.png";
 
-const Services = () => {
+const Services = (props) => {
+  const {heading} = props
+
   return (
     <div className="Services">
-      <div className="heading">
-        {" "}
-        <span> Our Services </span>{" "}
-      </div>
+      {
+        heading ? (
+          <div className="heading">
+          <span>{heading}</span>
+        </div>
+        ) : ""
+      }
       <div className="content-container">
         <div className="row-1">
           <div className="left">

@@ -69,7 +69,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <NavLink to="/" className="nav-logo">
-        Logo
+        Anand Electronics
       </NavLink>
       <div onClick={handleClick} className="nav-icon">
         {open ? <FiX /> : <FiMenu />}
