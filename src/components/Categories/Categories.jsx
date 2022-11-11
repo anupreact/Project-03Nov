@@ -7,51 +7,63 @@ import gyesers from "../../images/gyesers.png";
 import series from "../../images/series.png";
 
 const Categories = (props) => {
-  const {heading} = props
+  const { heading } = props;
+
+  const cardData = [
+    {
+      image: wires,
+      title: "Wires",
+    },
+    {
+      image: cfan,
+      title: "Ceiling Fans",
+    },
+    {
+      image: tfan,
+      title: "Table Fans",
+    },
+    {
+      image: gyesers,
+      title: "Gyesers",
+    },
+    {
+      image: wires,
+      title: "Wires",
+    },
+    {
+      image: cfan,
+      title: "Ceiling Fans",
+    },
+    {
+      image: series,
+      title: "Series",
+    },
+    {
+      image: wires,
+      title: "Wires",
+    },
+  ];
+  
   return (
     <div className="Categories">
-      {
-        heading ? (
-          <div className="heading">
+      {heading ? (
+        <div className="heading">
           <span>{heading}</span>
         </div>
-        ) : ""
-      }
-     
+      ) : (
+        ""
+      )}
+
       <div className="wrapper">
         <div className="cards-container">
-          <div className="cards">
-            <img src={wires} alt="" />
-            <span>Wires</span>
-          </div>
-          <div className="cards">
-            <img src={cfan} alt="" />
-            <span>Celing Fans</span>
-          </div>
-          <div className="cards">
-            <img src={tfan} alt="" />
-            <span>Table Fans</span>
-          </div>
-          <div className="cards">
-            <img src={gyesers} alt="" />
-            <span>Gyesers</span>
-          </div>
-          <div className="cards">
-            <img src={wires} alt="" />
-            <span>Wires</span>
-          </div>
-          <div className="cards">
-            <img src={cfan} alt="" />
-            <span>Celing Fans</span>
-          </div>
-          <div className="cards">
-            <img src={series} alt="" />
-            <span>Series</span>
-          </div>
-          <div className="cards">
-            <img src={wires} alt="" />
-            <span>Wires</span>
-          </div>
+          {cardData.map((items, index) => {
+            return (
+              <div className="cards" key={index}>
+                <img src={items.image} alt="" />
+                <span>{items.title}</span>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

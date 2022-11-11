@@ -1,12 +1,21 @@
 .Containar {
   background: rgb(255, 255, 255);
+
+
   .slider {
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;;
+    margin-bottom: 2rem;
+   
     .slick-prev:before,
     .slick-next:before {
       color: green !important;
+      display: none;
+    }
+    .v{
+      padding:20px;
+      display: flex;
+      justify-content: center;
     }
   }
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import "./Contact.scss";
 import PageCover from "../../components/PageCover/PageCover"
-import ContactComp from "../../components/Contact/Contact";
 import NewContact from "../../components/NewContact/NewContact";
 
 const Contact = () => {
@@ -9,7 +8,6 @@ const Contact = () => {
     <div className="Contact">
       <PageCover heading={"Contact"}/>
       <NewContact/> 
-      {/* <ContactComp/> */}
     </div>
   );
 };

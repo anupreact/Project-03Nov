@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
+// font-family: 'Tangerine', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@400;500&display=swap');
+// font-family: 'Athiti', sans-serif;
+
+
 .Testimonial {
   margin-top: 2rem;
   display: flex;
@@ -5,34 +12,34 @@
   gap: 1rem;
   .heading {
     text-align: center;
+    font-family: 'Aldrich', sans-serif;
     span {
       font-size: 2rem;
       font-weight: bold;
-      color: rgb(36, 36, 36);
+      color: rgb(46, 128, 153);
     }
   }
 
   .card-container {
-    // background: #000;
     padding: 1rem;
     display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
     .card {
       background: rgb(68, 184, 190);
       display: flex;
+      flex: 1;
       flex-direction: column;
       gap: 1rem;
-      width: 20%;
       justify-content: center;
       align-items: center;
       color: white;
       padding: 1rem 0.4rem;
-
+      cursor: pointer;
       border-radius: 10px;
       background: linear-gradient(145deg, #e6e6e6, #ffffff);
-      box-shadow:  5px 5px 10px #8a8a8a,
-                   -5px -5px 10px #ffffff;
+      box-shadow: 5px 5px 10px #8a8a8a, -5px -5px 10px #ffffff;
 
       .image-container {
         text-align: center;
@@ -53,11 +60,64 @@
       .Name {
         color: rgba(8, 67, 203, 0.711);
         text-align: center;
+        // font-weight: bold;
+        font-family: 'Athiti', sans-serif;
+
       }
       .message {
-        color: gray;
+        color: rgb(44, 44, 44);
         text-align: center;
+        font-size: 1.5rem;
+        font-family: "Tangerine", cursive;
       }
     }
   }
 }
+
+// MEDIA QUERIES
+
+@media only screen and (max-width: 800px) {
+  .Testimonial {
+    .card-container {
+      gap: 1rem;
+      .card {
+        flex: none !important;
+        width: 45%;
+        .message {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 446px) {
+  .Testimonial {
+    .card-container {
+      gap: 1rem;
+      .card {
+        flex: none;
+        width: 90%;
+        .message {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+}
+// @media only screen and (min-width: 300) and (max-width: 442px) {
+//   .Testimonial {
+//     .card-container {
+//       background: rgb(35, 48, 151)!important;
+//       gap: 1rem;
+//       .card {
+//         background: #000;
+//         flex: none !important;
+//         width: 45%;
+//         .message {
+//           font-size: 0.6rem;
+//         }
+//       }
+//     }
+//   }
+// }

@@ -1,14 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=News+Cycle&display=swap");
+// font-family: 'News Cycle', sans-serif;
+
 .Services {
- 
   display: flex;
   flex-direction: column;
   gap: 1rem;
   .heading {
     text-align: center;
+    font-family: "Aldrich", sans-serif;
     span {
       font-size: 2rem;
       font-weight: bold;
-      color: rgb(36, 36, 36);
+      color: rgb(46, 128, 153);
     }
   }
   .content-container {
@@ -29,12 +32,14 @@
         gap: 1rem;
         justify-content: center;
         p {
-          line-height: 1.5rem;
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+          font-family: "News Cycle", sans-serif;
         }
         button {
           width: 10rem;
           border: none;
-          background: rgb(237, 141, 7);
+          background: rgb(24, 172, 140);
           color: white;
           padding: 1rem;
           margin-top: 1rem;
@@ -71,12 +76,14 @@
         gap: 1rem;
         justify-content: center;
         p {
-          line-height: 1.5rem;
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+          font-family: "News Cycle", sans-serif;
         }
         button {
           width: 10rem;
           border: none;
-          background: rgb(237, 141, 7);
+          background: rgb(24, 172, 140);
           color: white;
           padding: 1rem;
           margin-top: 1rem;

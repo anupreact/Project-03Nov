@@ -1,21 +1,23 @@
 import React from "react";
 import "./Hero.scss";
-import heroImg from "../../images/hero.png"
 
-const Hero = () => {
+const Hero = (props) => {
+  const { title, description, image } = props;
   return (
     <div className="Hero">
       <div className="left">
-        <h1>Hello Title</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ipsam
-          nostrum accusantium. autem id?
-        </p>
+        <h1>{title}</h1>
+        <div className="para">
+
+        <p>{description}</p>
+        </div>
+        <div className="btns">
         <button> Get Started</button>
+        <button> Get Started</button>
+        </div>
       </div>
       <div className="right">
-        <img src={heroImg} alt="pic not added" />
+        <img src={image} alt="pic not added" />
       </div>
     </div>
   );

@@ -8,44 +8,20 @@ import Products from "../../components/Products/Products";
 import Testimonial from "../../components/Testimonial/Testimonial";
 import Brands from "../../components/Brands/Brands";
 import Contact from "../../components/Contact/Contact";
+import NewContact from "../../components/NewContact/NewContact";
+
 const Home = () => {
   return (
     <div className="Home">
       <Carousal />
-      <Services heading={"Our Services"}/>
+      <Services heading={"Our Services"} />
       <Categories heading={"Featured Categories"} />
       <Products heading={"Featured Products"} />
       <Testimonial heading={"Testimonials"} />
       <Brands heading={"Trusted Brands"} />
-      <Contact heading={"Contact Us"} />
+      <NewContact />
 
       {/* REFERENCE ------ https://freehtml5.co/preview/?item=solution-free-bootstrap-4-agency-template */}
-
-      {/*  
-      <br />
-      <br />
-      <br />
-      <br />
-
-      <h1>Make a products category section</h1>
-      <br />
-      <br />
-
-      <h1>Few Products with view all button</h1>
-      <br />
-      <br />
-
-      <h1>Make a products category section</h1>
-      <br />
-      <br />
-
-      <h1>Testimonial section</h1>
-      <br />
-      <br />
-
-      <h1>Brands row</h1>
-      <br />
-      <br /> */}
     </div>
   );
 };

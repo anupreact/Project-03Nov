@@ -9,21 +9,34 @@ footer {
     padding: 1rem 0 0 1rem;
     display: flex;
     flex-direction: column;
-    gap: .8rem;
+    gap: 0.8rem;
     flex-wrap: wrap;
     &.left {
+      p {
+        text-decoration: none;
+        color: white;
+        font-family: "Aldrich", sans-serif;
+        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+        cursor: pointer;
+      }
       .logo {
         .logo-img {
-          text-shadow: 12px;
+          text-decoration: none;
+          color: white;
+          font-family: "Aldrich", sans-serif;
+          text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
         }
       }
       .info {
-        color: gray;
+        color: rgb(172, 172, 172);
+        font-family: "Athiti", sans-serif;
+
       }
       .links {
         display: flex;
         gap: 1rem;
-        cursor:pointer span {
+        cursor: pointer;
+        span {
           padding: 0.3rem;
           width: 1rem;
           height: 1rem;
@@ -31,6 +44,9 @@ footer {
           display: flex;
           justify-content: center;
           align-items: center;
+          a {
+            color: white;
+          }
         }
       }
     }
@@ -38,16 +54,18 @@ footer {
     &.right {
       flex: 2;
       p:nth-child(1) {
-        color:rgb(222, 222, 222);
+        color: rgb(222, 222, 222);
         font-size: 1.2rem;
         font-weight: 500;
+        font-family: "Aldrich", sans-serif;
       }
 
       p:nth-child(2) {
         color: gray;
         font-size: 1rem;
         font-weight: lighter;
-        margin-right: .7rem;
+        margin-right: 0.7rem;
+        font-family: "Athiti", sans-serif;
       }
       input {
         background: transparent;
@@ -57,6 +75,7 @@ footer {
         outline: none;
         border-radius: 4px;
         color: white;
+        font-family: "Athiti", sans-serif;
       }
       button {
         width: 50%;
@@ -73,7 +92,6 @@ footer {
           background: rgb(69, 182, 231);
         }
       }
-   
     }
   }
   .linkss {
@@ -82,19 +100,22 @@ footer {
     // gap: 1rem;
     justify-content: center;
     section {
-
       width: 40%;
       p {
-        color:rgb(222, 222, 222);
+        color: rgb(222, 222, 222);
         font-size: 1.2rem;
         font-weight: 500;
+        font-family: "Aldrich", sans-serif;
       }
       div {
         display: flex;
         flex-direction: column;
         gap: 0.6rem;
         span {
-          color: gray;
+          color: rgb(151, 151, 151);
+          font-family: "Athiti", sans-serif;
+          cursor: pointer;
+          width: 40%;
         }
       }
     }

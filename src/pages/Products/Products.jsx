@@ -7,19 +7,10 @@ const Products = () => {
     <div className="Products">
 
       <PageCover heading={"Products"}/>
+      <h1> Breadcrumb and a filter bar with search input.</h1>
       <ProductComponent/>
-      <h1> A Product Header Which can include a breadcrumb</h1>
       <br />
-      <br />
-      <h1>
-        A sidebar Where a Search input, Categories section , filter selection
-      </h1>
-      <br />
-      <br />
-      <h1> main Content where the product cards will be placed </h1>
-
-      <br />
-      <br />
+     
     </div>
   );
 };

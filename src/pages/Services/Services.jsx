@@ -12,7 +12,7 @@ const Services = () => {
       <ServicesComponent/>
       <Categories heading={"Featured Categories"}/>
       
-      take reference from -- https://www.medallia.com/services/
+      {/* take reference from -- https://www.medallia.com/services/ */}
     </div>
   );
 };

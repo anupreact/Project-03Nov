@@ -3,34 +3,46 @@ import { Link } from "react-router-dom";
 import "./Footer.scss";
 
 const Footer = () => {
+  const socialLinks = [
+    {
+      icon: "fa fa-facebook",
+      url: "http://facebook.com",
+    },
+    {
+      icon: "fa fa-instagram",
+      url: "http://facebook.com",
+    },
+    {
+      icon: "fa fa-google",
+      url: "http://facebook.com",
+    },
+    {
+      icon: "fa fa-linkedin",
+      url: "http://facebook.com",
+    },
+    {
+      icon: "fa fa-twitter",
+      url: "http://facebook.com",
+    },
+  ];
   return (
     <>
       <footer className="footer">
         <section className="left">
-          {/* <div className="logo">
-            <div className="logo-img">Inox Panda</div>
-          </div> */}
           <p>Anand Electronics</p>
           <div className="info">
             001 Main Street, Times building, London, New York
           </div>
           <div className="links">
-            <span>
-              <i className="fa fa-facebook" aria-hidden="true"></i>
-            </span>
-
-            <span>
-              <i className="fa fa-instagram" aria-hidden="true"></i>
-            </span>
-            <span>
-              <i className="fa fa-google" aria-hidden="true"></i>
-            </span>
-            <span>
-              <i className="fa fa-linkedin" aria-hidden="true"></i>
-            </span>
-            <span>
-              <i className="fa fa-twitter" aria-hidden="true"></i>
-            </span>
+            {socialLinks.map((item, index) => {
+              return (
+                <span key={index}>
+                  <Link to={`${item.url}`}>
+                    <i className={`${item.icon}`} aria-hidden="true"></i>
+                  </Link>
+                </span>
+              );
+            })}
           </div>
         </section>
 
