@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Notable&display=swap");
+// font-family: 'Notable', sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
+// font-family: 'Orbitron', sans-serif;
+
 .Hero {
   display: flex;
   margin: 20px auto;
@@ -12,8 +18,11 @@
     justify-content: center;
     gap: 1rem;
     h1 {
-      font-size: 2rem;
+      font-size: 2.4rem;
+      letter-spacing: 0.2rem;
       color: rgb(85, 190, 203);
+      font-family: "Poppins", sans-serif;
+      font-family: "Orbitron", sans-serif;
       &::first-letter {
         color: rgb(245, 60, 125);
       }
@@ -23,6 +32,7 @@
       p {
         color: rgb(156, 156, 156);
         width: 70%;
+        font-family: "Poppins", sans-serif;
       }
     }
     .btns {
@@ -36,10 +46,10 @@
         margin-top: 1rem;
         font-size: large;
         cursor: pointer;
-        transition: 0.3s ease all;
+        transition: 0.2s ease all;
         &:hover {
-          background: rgb(157, 13, 75);
-          letter-spacing: 0.1rem;
+          background: rgb(36, 159, 212);
+          transform: scale(1.1);
         }
         &:nth-child(2) {
           margin-left: 1rem;
@@ -68,12 +78,23 @@
 @media only screen and (max-width: 446px) {
   .Hero {
     width: 100%;
-    padding: 0;
+    padding: 0 1rem;
     .left {
       padding: 12px;
       h1 {
+        font-size: 1.4rem;
       }
-      p {
+      .para {
+        p {
+          width: 100%;
+        }
+      }
+
+      .btns {
+        display: flex;
+        button {
+          font-size: small;
+        }
       }
     }
     .right {

@@ -9,14 +9,17 @@ import Testimonial from "../../components/Testimonial/Testimonial";
 import Brands from "../../components/Brands/Brands";
 import Contact from "../../components/Contact/Contact";
 import NewContact from "../../components/NewContact/NewContact";
+import PremiumServices from "../../components/PremiumServices/PremiumServices";
 
 const Home = () => {
   return (
     <div className="Home">
       <Carousal />
-      <Services heading={"Our Services"} />
+      <Services heading={"Our Services"} row1={true} row2={true} />
       <Categories heading={"Featured Categories"} />
       <Products heading={"Featured Products"} />
+
+      <PremiumServices/>
       <Testimonial heading={"Testimonials"} />
       <Brands heading={"Trusted Brands"} />
       <NewContact />

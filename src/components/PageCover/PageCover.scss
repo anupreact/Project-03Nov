@@ -13,9 +13,24 @@
   }
   span {
     position: absolute;
+    font-family: "Poppins", sans-serif;
     color:white;
     z-index: -1;
     font-size: 2rem;
     letter-spacing: .1rem;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .PageCover {
+    height:65px; 
+    img {
+      
+    }
+    span {
+      font-size: 1rem;
+      font-family: "Poppins", sans-serif;
+    }
   }
 }

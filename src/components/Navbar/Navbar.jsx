@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 import "./Navbar.scss";
+import logo from "../../images/Logo.png"
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -40,6 +41,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <NavLink to="/" className="nav-logo">
+        <img src={logo} alt="" />
+        {/* <span> Anand Electronics</span> */}
         Anand Electronics
       </NavLink>
       <div onClick={handleClick} className="nav-icon">

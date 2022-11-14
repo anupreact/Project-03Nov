@@ -1,12 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
 import "./Carousal.scss";
-import image1 from "../../images/music-banner.jpg";
-import image2 from "../../images/sports-banner.jpg";
-import image3 from "../../images/yoga-banner.jpg";
-import banner1 from "../../images/banner1.gif";
-import banner2 from "../../images/banner2.gif";
-import banner3 from "../../images/banner3.gif";
+
+
+
+import ban01 from "../../images/banner01.png"
+import ban02 from "../../images/banner02.png"
+import ban03 from "../../images/banner03.png"
+
 import Hero from "../Hero/Hero";
 const Carousal = () => {
   var settings = {  
@@ -14,42 +15,29 @@ const Carousal = () => {
   };
 
   const data = [
+    
     {
       title:
-        "The world's First learning solution for everyone.",
+        "Planning to reinnovate your home/business electric fittings",
       description:
-        "Lorem ipsum dolor sit amet elit. Eius quidem Lorem ipsum dolor sit Lorem ipsum dolor sit amet elit. Eius quidem Lorem ipsum dolor.",
-      image: banner1,
+        "We are having a dedicated team of electricians who can fulfill all your electric fittings from small rooms to huge appartments.",
+      image: ban03,
+    },
+{
+      title:
+        "Get all your small home electronic essentianls under one roof.",
+      description:
+        "Offers a wide variety of electronics essentials at unmatched prices.",
+      image: ban01,
     }, {
       title:
-        "Your Trusted ",
+        "Get the essential requirements for your seasonal requirements.",
       description:
-        "Lorem ipsum dolor sit amet elit. Eius quidem Lorem ipsum dolor sit",
-      image: banner1,
-    }, {
-      title:
-        "Your Trusted ",
-      description:
-        "Lorem ipsum dolor sit amet elit. Eius quidem Lorem ipsum dolor sit",
-      image: banner1,
+        "Wide variety of coolers ranging from small portable coolers upto large industrial coolers.",
+      image: ban02,
     },
 
 
-
-    // {
-    //   title:
-    //     " 2 Your Trusted and Reliable Electricals & Electronics goods supplier as well as custom service provider for yoyr home and office requirements",
-    //   description:
-    //     "Lorem ipsum dolor sit amet elit. Eius quidem Lorem ipsum dolor sit amet, adipisicing elit Quas ipsam nostrum accusantium. autem id?",
-    //   image: banner2,
-    // },
-    // {
-    //   title:
-    //     "3 Your Trusted and Reliable Electricals & Electronics goods supplier as well as custom service provider for yoyr home and office requirements",
-    //   description:
-    //     "Lorem ipsum dolor sit amet elit. Eius quidem Lorem ipsum dolor sit amet, adipisicing elit Quas ipsam nostrum accusantium. autem id?",
-    //   image: banner3,
-    // },
   ];
 
   return (

@@ -1,11 +1,12 @@
 .Containar {
   background: rgb(255, 255, 255);
-
+  margin-bottom: 5rem;
+  background: rgb(0, 87, 124);
 
   .slider {
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
    
     .slick-prev:before,
     .slick-next:before {

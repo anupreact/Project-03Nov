@@ -57,21 +57,11 @@ const NewContact = () => {
         },
       ],
     },
-    {
-      title: "INSTANT MESSAGES",
-      links: [
-        {
-          link1: " Business : sales@anandelectronics.com",
-          link2: "Career : career@anandelectronics.com",
-          link3: "Skype : sales@anandelectronics.com",
-        },
-      ],
-    },
   ];
   return (
     <div className="NewContact">
       <div className="info">
-        <p>Let’s Discuss Your Requirements & Start Develop Something Unique.</p>
+        <p>Let's Discuss Your Requirements & Start Develop Something Unique.</p>
         <span>Get a Free Quote!</span>
       </div>
 
@@ -136,7 +126,7 @@ const NewContact = () => {
                 {links.map((i, index) => {
                   const { link1, link2, link3 } = i;
                   return (
-                    <div key={index + 1}>
+                    <div className="exe" key={index + 1}>
                       <span>{link1}</span>
                       <br />
                       <span>{link2}</span>

@@ -9,7 +9,7 @@ const Services = () => {
   return (
     <div className="Services">
       <PageCover heading={"Services"}/>
-      <ServicesComponent/>
+      <ServicesComponent row1={true} row2={true}/>
       <Categories heading={"Featured Categories"}/>
       
       {/* take reference from -- https://www.medallia.com/services/ */}

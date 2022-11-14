@@ -1,19 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+// font-family: 'Poppins', sans-serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Athiti:wght@400;500&display=swap");
 // font-family: 'Athiti', sans-serif;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   overflow-x: hidden;
   background: rgb(255, 255, 255);
 }
-.main{
+.main {
+}
 
+@media only screen and (max-width: 664px) {
+  .Services,
+  .Products,
+  .Categories,
+  .PremiumServices,.Testimonial,.Brands {
+    .heading {
+      text-align: center;
+      font-family: "Aldrich", sans-serif;
+      font-family: "Aldrich", sans-serif;
+      span {
+        font-size: 1.3rem!important;
+        font-weight: bold;
+        color: rgb(46, 128, 153);
+      }
+    }
+  }
 }

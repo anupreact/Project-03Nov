@@ -2,6 +2,8 @@ import React from "react";
 import PageCover from "../../components/PageCover/PageCover";
 import "./About.scss";
 import icon from "../../images/icons8-technological-64.png";
+import profile from "../../images/profile-removebg-preview.png";
+import profile001 from "../../images/profile001.png";
 
 const About = () => {
   const cardData = [
@@ -62,41 +64,42 @@ const About = () => {
               quidem vero adipisci facere similique?
             </span>
             <span>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dicta, obcaecati officiis adipisci assumenda consequuntur nemo quisquam eveniet nisi nostrum iure. Eaque, assumenda voluptatum vero rem sunt delectus modi? Odio sapiente magni inventore ipsam! Nisi, quisquam natus in magnam, nobis debitis nemo autem animi, sapiente laboriosam inventore. Perferendis, temporibus id fuga earum tempora amet libero dignissimos, doloribus exercitationem eos, rem aliquam in maiores eligendi odio. Eveniet sunt facilis itaque deserunt unde nemo ad neque inventore quis!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              dicta, obcaecati officiis adipisci assumenda consequuntur nemo
+              quisquam eveniet nisi nostrum iure. Eaque, assumenda voluptatum
+              vero rem sunt delectus modi? Odio sapiente magni inventore ipsam!
+              Nisi, quisquam natus in magnam, nobis debitis nemo autem animi,
+              sapiente laboriosam inventore. Perferendis, temporibus id fuga
+              earum tempora amet libero dignissimos, doloribus exercitationem
+              eos, rem aliquam in maiores eligendi odio. Eveniet sunt facilis
+              itaque deserunt unde nemo ad neque inventore quis!
             </span>
           </div>
           <div className="right">
             <h2>What We Do?</h2>
             <span>
-              We Design, Develop and Market for you: Each member of WPWeb
-              Infotech, makes sure they go an extra mile to turn your idea into
-              a reality while also enjoying their work.
+              Lorem ipsum dolor sit, amet consectetur is atque accusamus
+              corrupti voluptas! Vel quisquam suscipit illum?
             </span>
-
             <span>
-              Put ourselves in your shoes: We always keep customer satisfaction
-              as our prime motto. Hence, we are always extremely responsive to
-              any of your requests and make sure we are there to help you all
-              the time and make it a smooth sailing development experience for
-              you.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequuntur repudiandae quibusdam alias! ur manobis veritatis
+              saepe. adipisci incidunt,
             </span>
-
             <span>
-              We deliver projects on time: We recognize how important your
-              business is to you, thus we do everything we can to deliver your
-              project on time.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequuntur repudiandae quibusdam alias! Cupiditate adipisci
+              incique accusamus corrupti voluptas! Vel quisquam suscipit illum?
             </span>
-
             <span>
-              Empowering your business: Our tech-savvy personnel make sure they
-              understand your business logic and goals and provide you with an
-              optimal solution that would benefit your business.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. quae,
+              dolores nesciunt minus hic asperiores nostrum, nobiquam suscipit
+              illum?
             </span>
-
             <span>
-              Best company for you: Don’t you think we are the best company for
-              your business? If not, try choosing us, and we will prove to you
-              our calibre.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequuntur repudiandae quibusdam alias! Cupiditate adipisci
+              incidunt, commodi q suscipit illum?
             </span>
           </div>
         </div>
@@ -129,28 +132,41 @@ const About = () => {
           <div className="left">
             <div className="quote">
               <span>
-                {" "}
-                “We, 50 tea lovers, 100 identical technoids, endless ideas,
-                earning 1000’s of hearts with one purpose in mind: to serve
-                technology.” Yes, we are veracious, and we are WPWeb, a tech
-                enthusiast!
+               
+                The CEO/Director Mr. Anand Raut son of Ashok Raut is a very
+                dynamic and inspirational personality, serving his services
+                since 2020 in this consumer centric electronics product based
+                business. He is an Electronics Engineer passed out in 2017.
+                After Getting enormous success in core Electronics sector, He
+                has started the business in 1st quarter of 2k20, and within such
+                a short period of time he is now the smartest,youngest and a
+                most succesful businessman in Electronics & Electricals domain
+                from Nagpur."
               </span>
 
               <div className="post">
-                <span>Name</span>
-                <span>Post</span>
+                <span>Name :</span>
+                <span> Mr. Anand Ashok Raut.</span>
               </div>
 
               <div className="social">
-                <span>Face</span>
-                <span>Insta</span>
-                <span>Linked</span>
-                <span>Twitter</span>
+                <div className="social-links">
+                  <div className="link">
+                    <i className="fa fa-facebook"></i>{" "}
+                  </div> <div className="link">
+                    <i className="fa fa-instagram"></i>{" "}
+                  </div> <div className="link">
+                    <i className="fa fa-linkedin"></i>{" "}
+                  </div> <div className="link">
+                    <i className="fa fa-twitter"></i>{" "}
+                  </div>
+                </div>
+               
               </div>
             </div>
           </div>
           <div className="right">
-            <img src="" alt="not found" />
+            <img src={profile001} alt="not found" />
           </div>
         </div>
       </div>
