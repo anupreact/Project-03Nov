@@ -9,9 +9,7 @@
     width: 90vw;
     color: black;
     margin: 0rem 1.3rem;
-    background: #000;
     p {
-      background: #000;
       font-size: 1.6rem;
       color: rgb(76, 76, 76);
       font-family: "Pathway Gothic One", sans-serif;
@@ -151,6 +149,7 @@
       gap: 1rem;
       color: rgb(255, 255, 255);
       flex: 1;
+      margin-bottom: 1rem;
       .title {
         font-family: "Aldrich", sans-serif;
         margin: 0;
@@ -160,7 +159,12 @@
       }
       .links {
         .exe {
+        display: flex;
+        flex-direction: column;
+        gap:.7rem;
           span {
+            cursor: pointer;
+            color:#c6c6c6
           }
         }
       }
@@ -234,6 +238,17 @@
       flex-direction: column;
       margin: 1rem;
       overflow-x: scroll;
+      .column{
+       .title{}
+       .links{
+         .exe{
+          gap:.2rem;
+           span{
+
+           }
+         }
+       }
+      }
     }
   }
 }

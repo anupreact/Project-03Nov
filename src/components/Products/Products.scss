@@ -25,6 +25,7 @@
       .card {
         background: #f3f3f3;
         min-width: 22.4%;
+        max-height: 370px;
         flex:1;
         display: flex;
         flex-direction: column;
@@ -35,16 +36,17 @@
         -webkit-box-shadow: 6px 4px 18px 0px rgba(196, 196, 196, 1);
         -moz-box-shadow: 6px 4px 18px 0px rgba(196, 196, 196, 1);
         box-shadow: 6px 4px 18px 0px rgba(196, 196, 196, 1);
-
-        .img-container {
-          width: 100%;
-          height: 40%;
-          img {
+       
+          .img-container {
             width: 100%;
-            height: 100%;
-            object-fit: contain;
+            height: 37%;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
           }
-        }
+        
         .name {
           color: rgb(47, 47, 47);
           font-size: 1.1rem;
@@ -85,6 +87,7 @@
   .footer {
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
     button {
       border: none;
       padding: 0.6rem 0rem;
@@ -120,8 +123,8 @@
     .wrapper{
       .container{
         .card{
-         min-width: 48%;
-
+         min-width: 48%;  
+          max-height: 290px;
          .name {
           color: rgb(47, 47, 47);
           font-size: 1rem;

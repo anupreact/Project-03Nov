@@ -18,14 +18,14 @@ const Carousal = () => {
     
     {
       title:
-        "Planning to reinnovate your home/business electric fittings",
+        "Planning to renovate or want to install new Lights in your home or business. ",
       description:
-        "We are having a dedicated team of electricians who can fulfill all your electric fittings from small rooms to huge appartments.",
+        "We are having a wide variety of LED lights ranginng from small night bulbs to upto large and decorative lights to illuminate your home or business.",
       image: ban03,
     },
 {
       title:
-        "Get all your small home electronic essentianls under one roof.",
+        "Get all your small home electrical essentianls under one roof.",
       description:
         "Offers a wide variety of electronics essentials at unmatched prices.",
       image: ban01,

@@ -29,9 +29,10 @@ const Footer = () => {
     <>
       <footer className="footer">
         <section className="left">
-          <p>Anand Electronics</p>
+          <p>Anand Electricals</p>
           <div className="info">
-            001 Main Street, Times building, London, New York
+            AR Electricals, shop no 12, Ajni, near Orange city hospital, wardha
+            road Nagpur 440016"
           </div>
           <div className="links">
             {socialLinks.map((item, index) => {
@@ -78,6 +79,12 @@ const Footer = () => {
           <button>Subscribe</button>
         </section>
       </footer>
+      <div className="disclaimer">
+        <span>
+          Copyright @ All Rights reserved 2022 | Made with{" "}
+          <span className="heart">❤ </span> by Anup
+        </span>
+      </div>
     </>
   );
 };

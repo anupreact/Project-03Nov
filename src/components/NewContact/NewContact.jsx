@@ -1,28 +1,26 @@
 import React from "react";
 import "./NewContact.scss";
 import icon from "../../images/icons8-technological-64.png";
-
+import icon1 from "../../images/contservice2.png";
+import icon2 from "../../images/contservice1.png";
+import icon3 from "../../images/contservice3.png";
 const NewContact = () => {
   const contactServices = [
     {
-      icon: icon,
+      icon: icon1,
       title: "We'll get back to you in 24 hours.",
       description: "to address your needs as quick as possible.",
     },
     {
-      icon: icon,
-      title: "1 We'll get back to you in 24 hours.",
-      description: "to address your needs as quick as possible.",
+      icon: icon2,
+      title: "We’ll prepare an estimation of the project.",
+      description: "describing the team compostition, timeline and costs.",
     },
     {
-      icon: icon,
-      title: "2 We'll get back to you in 24 hours.",
-      description: "to address your needs as quick as possible.",
-    },
-    {
-      icon: icon,
-      title: " 3 We'll get back to you in 24 hours.",
-      description: "to address your needs as quick as possible.",
+      icon: icon3,
+      title: "We'll perform a free plan review.",
+      description:
+        "if you already have an existing plan or setup we can do free plan review",
     },
   ];
 
@@ -38,22 +36,23 @@ const NewContact = () => {
       ],
     },
     {
-      title: "INSTANT MESSAGES",
+      title: "Direct Contact",
       links: [
         {
-          link1: " Business : sales@anandelectronics.com",
-          link2: "Career : career@anandelectronics.com",
-          link3: "Skype : sales@anandelectronics.com",
+          link1: " Whats app : +91- 9764921207",
+          link2: "Contact : +91- 9764921207",
+          // link3: "Skype : sales@anandelectronics.com",
         },
       ],
     },
     {
-      title: "INSTANT MESSAGES",
+      title: "Nagpur Office",
       links: [
         {
-          link1: " Business : sales@anandelectronics.com",
-          link2: "Career : career@anandelectronics.com",
-          link3: "Skype : sales@anandelectronics.com",
+          link1:
+            " AR Electricals, shop no 12, Ajni, near Orange city hospital, wardha road Nagpur 440016",
+          // link2: "Career : career@anandelectronics.com",
+          // link3: "Skype : sales@anandelectronics.com",
         },
       ],
     },
@@ -128,9 +127,7 @@ const NewContact = () => {
                   return (
                     <div className="exe" key={index + 1}>
                       <span>{link1}</span>
-                      <br />
                       <span>{link2}</span>
-                      <br />
                       <span>{link3}</span>
                     </div>
                   );

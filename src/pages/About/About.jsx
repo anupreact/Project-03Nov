@@ -116,9 +116,12 @@ const About = () => {
                 <div className="icon">
                   <img src={icon} alt="" />
                 </div>
-                <h3 className="title">{title}</h3>
+                {/* <h3 className="title">{title}</h3> */}
+                <h3 className="title">Optimum Customer satisfaction</h3>
                 <br />
-                <p className="desc">{description}</p>
+                <p className="desc">{""}
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, impedit magni. Odio, quidem quas praesentium, corrupti iusto ipsum eveniet aliquam assumenda eligendi modi ducimus vitae eum repellendus, exercitationem minus dolor?
+                </p>
               </div>
             );
           })}
@@ -132,7 +135,6 @@ const About = () => {
           <div className="left">
             <div className="quote">
               <span>
-               
                 The CEO/Director Mr. Anand Raut son of Ashok Raut is a very
                 dynamic and inspirational personality, serving his services
                 since 2020 in this consumer centric electronics product based
@@ -153,20 +155,29 @@ const About = () => {
                 <div className="social-links">
                   <div className="link">
                     <i className="fa fa-facebook"></i>{" "}
-                  </div> <div className="link">
+                  </div>{" "}
+                  <div className="link">
                     <i className="fa fa-instagram"></i>{" "}
-                  </div> <div className="link">
+                  </div>{" "}
+                  <div className="link">
                     <i className="fa fa-linkedin"></i>{" "}
-                  </div> <div className="link">
+                  </div>{" "}
+                  <div className="link">
                     <i className="fa fa-twitter"></i>{" "}
                   </div>
                 </div>
-               
               </div>
             </div>
           </div>
           <div className="right">
-            <img src={profile001} alt="not found" />
+            <div className="img-container">
+              <img src={profile001} alt="not found" />
+            </div>
+
+            <div className="post">
+                <span> Mr. Anand Ashok Raut.</span>
+              </div>
+
           </div>
         </div>
       </div>

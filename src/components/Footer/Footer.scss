@@ -121,6 +121,22 @@ footer {
     }
   }
 }
+.disclaimer{
+  background: rgb(21, 54, 81);
+  display: flex;justify-content: center;
+  border-top: 1px solid gray ;
+  padding:1rem; 
+
+  span{
+    font-family: "Poppins", sans-serif;
+    color:rgb(171, 171, 171);
+    text-align: center;
+    font-size: 14px;
+    .heart{
+      color:rgb(252, 79, 143)
+    }
+  }
+}
 @media only screen and (max-width: 600px) {
   footer {
     flex-direction: column !important;
@@ -129,6 +145,22 @@ footer {
       &.mid-1,
       &.mid-2 {
         width: 50%;
+      }
+    }
+  }
+
+  .disclaimer{
+    background: rgb(21, 54, 81);
+    display: flex;justify-content: center;
+    border-top: 1px solid gray;
+    padding:1rem; 
+    span{
+      font-size: 13px;
+      font-family: "Poppins", sans-serif;
+      color:rgb(171, 171, 171);
+      text-align: center;
+      .heart{
+        color:rgb(252, 79, 143)
       }
     }
   }

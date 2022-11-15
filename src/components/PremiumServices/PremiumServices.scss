@@ -3,15 +3,18 @@
 
 .PremiumServices {
   background: rgb(29, 87, 118);
-  margin: 2rem 0rem;
+  margin: 0rem 0rem;
   padding: 1rem;
+  // margin-bottom: 0rem!important;
   .heading {
     text-align: center;
     font-family: "Aldrich", sans-serif;
     span {
       font-size: 2rem;
+      padding-bottom: .4rem;
       font-weight: bold;
-      color: rgb(255, 255, 255);
+      color: rgb(50, 164, 202);
+      border-bottom: 2px solid white;
     }
   }
   .content-container {
@@ -27,13 +30,17 @@
         gap: 1rem;
         justify-content: center;
         p {
-          color: rgb(255, 255, 255);
-          font-size: 1.3rem;
-            line-height: 2rem;
+          color: rgb(211, 211, 211);
+          font-size: 1.1rem;
+            line-height: 1.7rem;
             word-spacing: .5rem;
           //   font-family: "News Cycle", sans-serif;
 
           font-family: "Poppins", sans-serif;
+          &:nth-child(1){
+            color:rgb(241, 241, 241);
+            letter-spacing: .1rem;
+          }
         }
         button {
           width: 10rem;

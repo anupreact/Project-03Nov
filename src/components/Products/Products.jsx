@@ -9,69 +9,11 @@ import extention3 from "../../images/Products/extention3.png";
 import portablelamp from "../../images/Products/portablelamp.png";
 import racket3 from "../../images/Products/racket3.png";
 import pinplugs from "../../images/Products/pinplugs.png";
+import { NavLink } from "react-router-dom";
+import productData from "../../Data/productData"
 
 const Products = (props) => {
   const { heading } = props;
-
-  const productData = [
-    {
-      name: "Havells Fan",
-      image: cFan,
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis voluptates voluptate!",
-      price: "1200 INR",
-    },
-    {
-      name: "Syska Iron",
-      image: iron1,
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis voluptates voluptate!",
-      price: "1200 INR",
-    },
-    {
-      name: "Bajaj water heater",
-      image: heater2,
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis voluptates voluptate!",
-      price: "1200 INR",
-    },
-    {
-      name: "Usha Coolers",
-      image: cooler1,
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis voluptates voluptate!",
-      price: "1200 INR",
-    },
-    {
-      name: "Extention Boards",
-      image: extention3,
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis voluptates voluptate!",
-      price: "1200 INR",
-    },
-    {
-      name: "Led flash Lamps",
-      image: portablelamp,
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis voluptates voluptate!",
-      price: "1200 INR",
-    },
-    {
-      name: "Mosquito traps",
-      image: racket3,
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis voluptates voluptate!",
-      price: "1200 INR",
-    },
-    {
-      name: "3-pin plugs",
-      image: pinplugs,
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis voluptates voluptate!",
-      price: "1200 INR",
-    },
-  ];
-
   return (
     <div className="Products">
       {heading ? (
@@ -85,11 +27,14 @@ const Products = (props) => {
       <div className="wrapper">
         <div className="container">
           {productData.map((item, index) => {
-            const { image, name, description, price } = item;
+            const { image, name, description, price,id } = item;
             return (
               <div className="card" key={index}>
                 <div className="img-container">
+                  <NavLink to={`/product/${id}`}>
+
                   <img src={image} alt="" />
+                  </NavLink>
                 </div>
                 <span className="name">{name}</span>
                 <span className="desc">{description}</span>

@@ -43,7 +43,7 @@ const Navbar = () => {
       <NavLink to="/" className="nav-logo">
         <img src={logo} alt="" />
         {/* <span> Anand Electronics</span> */}
-        Anand Electronics
+        Anand Electricals
       </NavLink>
       <div onClick={handleClick} className="nav-icon">
         {open ? <FiX /> : <FiMenu />}

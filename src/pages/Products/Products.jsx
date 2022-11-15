@@ -10,7 +10,6 @@ const Products = () => {
       <h1> Breadcrumb and a filter bar with search input.</h1>
       <ProductComponent/>
       <br />
-     
     </div>
   );
 };
