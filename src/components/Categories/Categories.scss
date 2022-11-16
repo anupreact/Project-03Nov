@@ -24,7 +24,7 @@
       justify-content: center;
       padding: 1rem;
       .cards {
-        background: rgb(13, 48, 96);
+        background: rgb(248, 248, 248);
         width: 30%;
         height: 12rem;
         border-radius: 12px;
@@ -34,9 +34,15 @@
         align-items: center;
         cursor: pointer;
 
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+
+        background: #ffffff;
+        box-shadow: 6px 6px 12px #bfbfbf, -6px -6px 12px #ffffff;
+
         span {
           position: absolute;
-          color: white;
+          color: rgb(21, 100, 112);
           opacity: 0;
           font-weight: 800;
           font-size: 2rem;
@@ -91,7 +97,7 @@
   .Categories {
     .wrapper {
       .cards-container {
-      width: 100%;
+        width: 100%;
 
         padding: 0;
         .cards {
@@ -120,9 +126,8 @@
             width: 45%;
           }
 
-          span{
-          font-size: rem;
-
+          span {
+            font-size: 1rem;
           }
         }
       }

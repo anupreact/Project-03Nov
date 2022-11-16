@@ -1,0 +1,15 @@
+.Breadcrumb{
+    margin:.4rem 1rem ;
+    border-bottom: 1px solid rgb(173, 173, 173);
+    .content{
+        padding:1rem;
+        span{
+            text-transform: capitalize;
+            color:gray;
+            a{
+                text-decoration: none;
+                color:rgb(58, 145, 216);
+            }
+        }
+    }
+}

@@ -42,8 +42,8 @@ const About = () => {
   ];
 
   const aboutLeft = [
-    "WPWeb Infotech is a leading Web Development Company in India and USA. It excels in offering elegant & profitable web solutions for a global clientele. We offer a one-stop solution that includes comprehensive backend technologies like PHP, WordPress, Shopify, Magento, Codeigniter, Laravel, Drupal, and Node.Js and frontend technologies like React, Angular, JavaScript, HTML5, and CSS3 assisting businesses to build their brand. We help curate high-performing digital experiences that add value to your business with our web development services. Our team comprises tech wizards with extensive experience in creating handcrafted solutions employing Web Development, eCommerce development, UI/UX Design, Shopify Web Application development, and PHP frameworks like Laravel, CI, and CakePHP.",
-    "WPWeb Infotech is a leading Web Development Company in India and USA. It excels in offering elegant & profitable web solutions for a global clientele. We offer a one-stop solution that includes comprehensive backend technologies like PHP, WordPress, Shopify, Magento, Codeigniter, Laravel, Drupal, and Node.Js and frontend technologies like React, Angular, JavaScndcrafted solutions employing Web Development, eCommerce development, UI/UX Design, Shopify Web Application development, and PHP frameworks like Laravel, CI, and CakePHP.",
+    "Anand Electricals is a leading Electrical Retail and Wholesale essentials and service provider in Nagpur. It excels in offering elegant & high quality products ranging from Light bulbs, LED'S, Wires, Cables, Decorative Series, Celing Fans, Table Fans, Desert Coolers, Gyesers, Home Electrical switches, Iron, Water Heaters & Room Heaters . We offer a one-stop solution that includes dealing in  electrical/electronics sales in retail & wholesale, also we provide essential Home appliances repairing service as well. We help our customers by providing all the electrical/electronics service under one roof . Our team comprises tech wizards with extensive experience in creating handcrafted solutions employing Home Electrical fittings, Renovation Services, Home Automation services etc",
+
   ];
 
   return (
@@ -54,26 +54,9 @@ const About = () => {
           <div className="left">
             <h2>Who We Are?</h2>
             <span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              dolore architecto iste, cum dolores cupiditate id laborum mollitia
-              commodi necessitatibus, hic eveniet similique consequatur, quos
-              reiciendis? Quam, quia natus. Velit deserunt a, eos excepturi et
-              qui ex aperiam dolorem ad consectetur ratione cupiditate. Itaque
-              illum similique rerum dolore provident? Consequuntur dicta
-              officiis commodi sed voluptas modi quae. Provident modi neque,
-              quidem vero adipisci facere similique?
+            Anand Electricals is a leading Electrical/Electronics Retailer/Wholesaler and service provider in Nagpur. It excels in offering elegant & high quality products ranging from Light bulbs, LED'S, Wires, Cables, Decorative Series, Celing Fans, Table Fans, Desert Coolers, Gyesers, Home Electrical switches, Iron, Water Heaters & Room Heaters . We offer a one-stop solution that includes dealing in  electrical/electronics sales in retail & wholesale, also we provide essential Home appliances repairing service as well. We help our customers by providing all the electrical/electronics service under one roof. Our team comprises tech wizards with extensive experience in creating handcrafted solutions employing Home Electrical fittings, Renovation Services and Home Automation services.
             </span>
-            <span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              dicta, obcaecati officiis adipisci assumenda consequuntur nemo
-              quisquam eveniet nisi nostrum iure. Eaque, assumenda voluptatum
-              vero rem sunt delectus modi? Odio sapiente magni inventore ipsam!
-              Nisi, quisquam natus in magnam, nobis debitis nemo autem animi,
-              sapiente laboriosam inventore. Perferendis, temporibus id fuga
-              earum tempora amet libero dignissimos, doloribus exercitationem
-              eos, rem aliquam in maiores eligendi odio. Eveniet sunt facilis
-              itaque deserunt unde nemo ad neque inventore quis!
-            </span>
+            
           </div>
           <div className="right">
             <h2>What We Do?</h2>
@@ -107,7 +90,7 @@ const About = () => {
 
       <div className="special">
         <h3>Our Core Principles Make Us Unique</h3>
-        <span>Deliver Reliable & Quality Web Development Services</span>
+        <span>Deliver Reliable & Quality Electrical Services</span>
         <div className="card-container">
           {cardData.map((item, index) => {
             const { icon, title, description } = item;

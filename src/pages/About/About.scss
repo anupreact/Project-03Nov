@@ -23,12 +23,16 @@
           color: rgb(17, 95, 159);
           font-size: 1.6rem;
           letter-spacing: 0.3rem;
+          font-family: "Poppins", sans-serif;
+
         }
         span {
           font-size: 1.1rem;
           word-spacing: 0.4rem;
           letter-spacing: 0.1rem;
           color: rgb(8, 46, 60);
+          font-family: "Poppins", sans-serif;
+
         }
       }
       .right {
@@ -38,6 +42,8 @@
         gap: 2rem;
         flex: 1;
         h2 {
+          font-family: "Poppins", sans-serif;
+
           font-size: 1.6rem;
           font-size: 1.6rem;
           color: rgb(17, 95, 159);
@@ -66,6 +72,8 @@
       font-family: "Poppins", serif;
     }
     span {
+      font-family: "Poppins", sans-serif;
+
       color: rgb(92, 87, 78);
       text-align: center;
       font-size: 1rem;

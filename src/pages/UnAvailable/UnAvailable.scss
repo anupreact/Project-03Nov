@@ -1,0 +1,54 @@
+.UnAvailable {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding:1rem;
+  background: rgb(255, 255, 255);
+  p {
+    width: 50%;
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+    color:rgb(255, 67, 130);
+    letter-spacing: .1rem;
+  }
+  a{
+    text-decoration: none;
+    transition: .3s ease all;
+    letter-spacing: .1rem;
+    text-align: center;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  button {
+    border: none;
+    background: rgb(24, 172, 140);
+    color: white;
+    padding:.3rem 1rem;
+    margin-top: 1rem;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    &:hover {
+      background: rgb(6, 159, 197);
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .UnAvailable {
+    height:100%;
+    p{
+      width: 87%;
+      font-size:1rem;
+    }
+    a{
+      text-align: center;
+    }
+  }
+}

@@ -44,7 +44,7 @@
       .image-container {
         text-align: center;
         border: 1px solid rgb(190, 255, 243);
-        background: rgb(190, 255, 243);
+        background: rgb(22, 130, 157);
         width: 70px;
         height: 70px;
         border-radius: 50%;
@@ -58,17 +58,17 @@
         }
       }
       .Name {
-        color: rgba(8, 67, 203, 0.711);
+        color: rgb(72, 72, 72);
         text-align: center;
         // font-weight: bold;
         font-family: 'Athiti', sans-serif;
-
       }
       .message {
-        color: rgb(44, 44, 44);
+        color: rgb(24, 103, 127);
         text-align: center;
-        font-size: 1.5rem;
+        font-size: .8rem;
         font-family: "Tangerine", cursive;
+        font-family: "Poppins", sans-serif;
       }
     }
   }
@@ -84,7 +84,7 @@
         flex: none !important;
         width: 45%;
         .message {
-          font-size: 1rem;
+          font-size: .8rem;
         }
       }
     }
@@ -94,12 +94,12 @@
 @media only screen and (max-width: 446px) {
   .Testimonial {
     .card-container {
-      gap: 1rem;
+      gap: 1rem;  
       .card {
         flex: none;
         width: 90%;
         .message {
-          font-size:1.3rem;
+          font-size:.7rem;
         }
       }
     }

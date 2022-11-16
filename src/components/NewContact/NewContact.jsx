@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NewContact.scss";
 import icon from "../../images/icons8-technological-64.png";
 import icon1 from "../../images/contservice2.png";
 import icon2 from "../../images/contservice1.png";
 import icon3 from "../../images/contservice3.png";
+import emailjs from "@emailjs/browser";
+
 const NewContact = () => {
   const contactServices = [
     {
@@ -29,9 +31,9 @@ const NewContact = () => {
       title: "INSTANT MESSAGES",
       links: [
         {
-          link1: " Business : sales@anandelectronics.com",
-          link2: "Career : career@anandelectronics.com",
-          link3: "Skype : sales@anandelectronics.com",
+          link1: " Business : ar.electricals007@gmail.com",
+          link2: "Career : ar.electricals007@gmail.com",
+          link3: "Skype : ar.electricals007@gmail.com",
         },
       ],
     },
@@ -39,8 +41,8 @@ const NewContact = () => {
       title: "Direct Contact",
       links: [
         {
-          link1: " Whats app : +91- 9764921207",
-          link2: "Contact : +91- 9764921207",
+          link1: " Whats app : +91- 9764921207.",
+          link2: "Contact : +91- 7709434879.",
           // link3: "Skype : sales@anandelectronics.com",
         },
       ],
@@ -50,13 +52,77 @@ const NewContact = () => {
       links: [
         {
           link1:
-            " AR Electricals, shop no 12, Ajni, near Orange city hospital, wardha road Nagpur 440016",
+            "AR Electricals, Shop No 02, Deo Nagar, Khamla Road, Near Tajshree Honda Showroom, Nagpur 440015.",
           // link2: "Career : career@anandelectronics.com",
           // link3: "Skype : sales@anandelectronics.com",
         },
       ],
     },
   ];
+
+  const [formData, setFormData] = useState({
+    Name: "",
+    email: "",
+    phone: "",
+    address: "",
+    message: "",
+  });
+  const { Name, email, phone, address, message } = formData;
+
+  const handleChange = (e) => {
+    let { name, value } = e.target;
+
+    console.log(name, value);
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    if (email !== "" && phone !== "") {
+      const templateParams = {
+        name: Name,
+        email: email,
+        phone: phone,
+        address:address,
+        message: message,
+      };
+      // emailjs.send(serviceID, templateID, templateParams, publicKey);
+      // serviceid - service_ow0j48h
+      // template id-  template_7vkty33
+      // templateParams
+      // publicKey- mrTtWk1L0azEIifwa
+      emailjs
+        .send(
+          "service_ow0j48h",
+          "template_7vkty33",
+          templateParams,
+          "mrTtWk1L0azEIifwa"
+        )
+        .then(
+          (response) => {
+            console.log("SUCCESS!", response.status, response.text);
+          },
+          (err) => {
+            console.log("FAILED...", err);
+          }
+        );
+
+
+      setTimeout(() => {
+        setFormData({
+          Name: "",
+          email: "",
+          phone: "",
+          address: "",
+          message: "",
+        })
+      }, 1000);
+    }
+    else{
+      alert("email and phone number is required")
+    }
+  };
+
   return (
     <div className="NewContact">
       <div className="info">
@@ -71,21 +137,52 @@ const NewContact = () => {
               Get In Touch With Our Experts To Turn Your Idea Into Reality.
             </span>
           </div>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="inputs">
-              <input type="text" placeholder="Name" />
+              <input
+                type="text"
+                name="Name"
+                value={Name}
+                onChange={handleChange}
+                placeholder="Name"
+              />
             </div>
             <div className="inputs">
-              <input type="text" placeholder="Email" />
+              <input
+                type="text"
+                name="email"
+                value={email}
+                onChange={handleChange}
+                placeholder="Email"
+              />
             </div>
             <div className="inputs">
-              <input type="text" placeholder="Phone no." />
+              <input
+                type="text"
+                name="phone"
+                value={phone}
+                onChange={handleChange}
+                placeholder="Phone no."
+              />
             </div>
             <div className="inputs">
-              <input type="text" placeholder="Address" />
+              <input
+                type="text"
+                name="address"
+                value={address}
+                onChange={handleChange}
+                placeholder="Address"
+              />
             </div>
             <div className="inputs" placeholder="Name">
-              <textarea type="text" placeholder="Your message" rows={6} />
+              <textarea
+                type="text"
+                name="message"
+                value={message}
+                onChange={handleChange}
+                placeholder="Your message"
+                rows={6}
+              />
             </div>
             <div className="inputs">
               <button>Submit</button>

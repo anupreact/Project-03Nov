@@ -30,19 +30,17 @@
     .left {
       flex: 1;
       margin: 1rem;
-      background: rgb(249, 249, 249);
       padding: 1rem;
-
-      border-radius: 11px;
-      background: #f5f5f5;
-      box-shadow: 7px 7px 17px #d0d0d0, -7px -7px 17px #ffffff;
-
+      border-radius: 5px;
+      background: #ffffff;
+      box-shadow: 6px 6px 12px #bfbfbf, -6px -6px 12px #ffffff;
       .head {
         display: flex;
+        margin-bottom: 1rem;
         span {
-          font-size: 1.4rem;
+          font-size: 1.1rem;
           color: rgb(68, 68, 68);
-          font-family: "Pathway Gothic One", sans-serif;
+          font-family: "Poppins", sans-serif;
         }
       }
 
@@ -61,25 +59,28 @@
             width: 90%;
             padding: 0.8rem 1rem;
             outline: none;
-            border: 1px solid gray;
+            border: none;
+            // border-bottom: 1px solid gray;
             background: rgb(236, 236, 236);
-            border-radius: 10px;
+            background: rgb(255, 255, 255);
+            border-radius: 5px;
+
+            background: #ffffff;
+            box-shadow: 6px 6px 12px #bfbfbf, -6px -6px 12px #ffffff;
             &::placeholder {
               font: 1em sans-serif;
             }
           }
           button {
-            // width: 30%;
             border: none;
-            background: rgb(237, 141, 7);
+            background: rgb(12, 106, 121);
             color: white;
             padding: 0.8rem 3rem;
             font-size: large;
             cursor: pointer;
             transition: 0.3s ease all;
-            border-radius: 10px;
             &:hover {
-              background: rgb(255, 81, 0);
+              background: rgb(7, 189, 255);
               letter-spacing: 0.1rem;
             }
           }
@@ -94,18 +95,16 @@
       flex-direction: column;
       gap: 2rem;
       color: gray;
-      border-radius: 11px;
-      background: #f5f5f5;
-      box-shadow: 7px 7px 17px #d0d0d0, -7px -7px 17px #ffffff;
+      background: #ffffff;
+      box-shadow: 6px 6px 12px #bfbfbf, -6px -6px 12px #ffffff;
 
       .row {
-        display: flex;
+        display: flex;  
         gap: 1rem;
-        background: rgb(254, 254, 254);
-        border-radius: 11px;
-        background: #f5f5f5;
-        box-shadow: 7px 7px 17px #d0d0d0, -7px -7px 17px #ffffff;
         padding: 1rem;
+        border-radius: 10px;
+        background: #ffffff;
+        box-shadow: 6px 6px 12px #bfbfbf, -6px -6px 12px #ffffff;
         .left-col {
           div {
             img {
@@ -159,12 +158,13 @@
       }
       .links {
         .exe {
-        display: flex;
-        flex-direction: column;
-        gap:.7rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.7rem;
           span {
+            font-family: "Poppins", sans-serif;
             cursor: pointer;
-            color:#c6c6c6
+            color: #c6c6c6;
           }
         }
       }
@@ -238,16 +238,16 @@
       flex-direction: column;
       margin: 1rem;
       overflow-x: scroll;
-      .column{
-       .title{}
-       .links{
-         .exe{
-          gap:.2rem;
-           span{
-
-           }
-         }
-       }
+      .column {
+        .title {
+        }
+        .links {
+          .exe {
+            gap: 0.2rem;
+            span {
+            }
+          }
+        }
       }
     }
   }
@@ -258,7 +258,7 @@
     .bottom {
       flex-direction: column;
       margin: 1rem;
-    padding: .4rem;
+      padding: 0.4rem;
 
       overflow-x: scroll;
       .column {
@@ -272,7 +272,6 @@
           margin: 0;
           padding: 0;
           span {
-          
           }
         }
         .links {

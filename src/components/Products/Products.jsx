@@ -10,10 +10,9 @@ import portablelamp from "../../images/Products/portablelamp.png";
 import racket3 from "../../images/Products/racket3.png";
 import pinplugs from "../../images/Products/pinplugs.png";
 import { NavLink } from "react-router-dom";
-import productData from "../../Data/productData"
 
 const Products = (props) => {
-  const { heading } = props;
+  const { heading, data } = props;
   return (
     <div className="Products">
       {heading ? (
@@ -26,20 +25,25 @@ const Products = (props) => {
 
       <div className="wrapper">
         <div className="container">
-          {productData.map((item, index) => {
-            const { image, name, description, price,id } = item;
+          {data.map((item, index) => {
+            const { image, name, description, price, id } = item;
             return (
               <div className="card" key={index}>
                 <div className="img-container">
                   <NavLink to={`/product/${id}`}>
-
-                  <img src={image} alt="" />
+                    <img src={image} alt="" />
                   </NavLink>
                 </div>
-                <span className="name">{name}</span>
-                <span className="desc">{description}</span>
+                <NavLink to={`/product/${id}`}>
+                  <span className="name">{name}</span>
+                </NavLink>
+                <NavLink to={`/product/${id}`}>
+                  <span className="desc">{description}</span>
+                </NavLink>
                 <span className="price">Price : {price}</span>
-                <button>Add To Cart</button>
+                <NavLink to="/unavailable">
+                  <button>Buy Now</button>
+                </NavLink>
               </div>
             );
           })}
@@ -47,7 +51,9 @@ const Products = (props) => {
       </div>
 
       <div className="footer">
-        <button>View All Products</button>
+        <NavLink to="/products">
+          <button>View All Products</button>
+        </NavLink>
       </div>
     </div>
   );

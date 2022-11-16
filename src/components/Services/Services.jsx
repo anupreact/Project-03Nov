@@ -21,7 +21,7 @@ const Services = (props) => {
           <div className="row-1">
             <div className="left">
               <p style={{ fontWeight: "bold" }}>
-                {banTitle ? banTitle : " Electrical goods seller."}
+                {banTitle ? banTitle : "Sales : Retail and Wholesale"}
               </p>
               <p>
                 {bannerText ? (
@@ -53,7 +53,7 @@ const Services = (props) => {
           <div className="row-2">
             <div className="left">
               <p style={{ fontWeight: "bold" }}>
-                Essential Electrical/Electronics Service provider.
+                Essential Electrical/Electronics Reparing & Service provider.
               </p>
               <p>
                 As we proudly call ourself a one stop solution for your needs we

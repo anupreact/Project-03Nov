@@ -13,7 +13,7 @@ const Hero = (props) => {
         </div>
         <div className="btns">
         <button> Get Started</button>
-        <button> Get Started</button>
+        <button> Get Quote</button>
         </div>
       </div>
       <div className="right">

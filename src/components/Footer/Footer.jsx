@@ -31,8 +31,28 @@ const Footer = () => {
         <section className="left">
           <p>Anand Electricals</p>
           <div className="info">
-            AR Electricals, shop no 12, Ajni, near Orange city hospital, wardha
-            road Nagpur 440016"
+            AR Electricals, Shop No 02, Deo Nagar, Khamla Road, Near Tajshree
+            Honda Showroom, Nagpur 440015
+          </div>
+          <div className="info">
+            <span>
+            <i class="fa fa-certificate" aria-hidden="true"></i>
+
+            </span>
+            <span className="gst">GST No. 27CGWPR1898D1ZK</span>
+          </div> 
+          <div className="info">
+            <span>
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </span>
+            <span>ar.electricals007@gmail.com</span>
+          </div> 
+          <div className="info">
+            <span>
+            <i class="fa fa-phone-square" aria-hidden="true"></i>
+
+            </span>
+            <span>9764921207 / 7709434879</span>
           </div>
           <div className="links">
             {socialLinks.map((item, index) => {
@@ -72,7 +92,7 @@ const Footer = () => {
           <p>Newsletter</p>
           <p>
             By Subscribing to our NewsLetter , You will get notified everytime
-            we launch our new arrivals
+            we launch or add new products in our portfolio.
           </p>
           <input type="text" placeholder="Enter your email" />
 
