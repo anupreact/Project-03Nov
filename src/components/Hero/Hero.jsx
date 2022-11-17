@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Hero.scss";
 
 const Hero = (props) => {
@@ -8,12 +9,15 @@ const Hero = (props) => {
       <div className="left">
         <h1>{title}</h1>
         <div className="para">
-
-        <p>{description}</p>
+          <p>{description}</p>
         </div>
         <div className="btns">
-        <button> Get Started</button>
-        <button> Get Quote</button>
+          <NavLink to="/products">
+            <button> Get Started</button>
+          </NavLink>
+          <NavLink to="/contact">
+            <button> Get Quote</button>
+          </NavLink>
         </div>
       </div>
       <div className="right">

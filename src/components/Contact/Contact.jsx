@@ -3,7 +3,7 @@ import "./Contact.scss";
 
 import video from "../../images/video.mp4";
 import video2 from "../../images/Pexels Videos 1851190.mp4";
-import video3 from "../../images/pexels-mack-kamp-1449455.jpg";
+// import video3 from "../../images/pexels-mack-kamp-1449455.jpg";
 const Contact = (props) => {
   const { heading } = props;
   return (
@@ -21,7 +21,7 @@ const Contact = (props) => {
         <span>Get a Free Quote!</span>
       </div>
       <div className="Maincontainer">
-        <img src={video3} alt="not found"></img>
+        {/* <img src={video3} alt="not found"></img> */}
         <div className="card-container">
           <div className="left">
             <form>

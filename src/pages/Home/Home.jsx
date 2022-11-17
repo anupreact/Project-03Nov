@@ -12,14 +12,15 @@ import NewContact from "../../components/NewContact/NewContact";
 import PremiumServices from "../../components/PremiumServices/PremiumServices";
 import Banners from "../../components/Banners/Banners";
 import premImage from "../../images/premium3.png"
-import productData from "../../Data/productData";
+import {productData} from "../../Data/productData";
 
 
 const Home = () => {
 
   const pData = productData.slice(0,4)
   return (
-    <div className="Home">
+    // <div className="Home">
+    <>
       <Carousal />
       <Banners/>
       <Services heading={"Our Services"} row1={true} row2={true} />
@@ -41,7 +42,10 @@ const Home = () => {
       <NewContact />
 
       {/* REFERENCE ------ https://freehtml5.co/preview/?item=solution-free-bootstrap-4-agency-template */}
-    </div>
+   
+
+    {/* </div> */}
+    </>
   );
 };
 

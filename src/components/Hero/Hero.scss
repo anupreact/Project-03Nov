@@ -8,7 +8,7 @@
   display: flex;
   margin: 20px auto;
   padding: 1rem;
-  width: 80%;
+  width: 90%;
   .left {
     // background: #000;
     flex: 1;
@@ -37,23 +37,29 @@
     }
     .btns {
       display: flex;
-      button {
-        // width: 10rem;
-        border: none;
-        background: rgb(24, 172, 140);
-        color: white;
-        padding: 0.6rem 1rem;
-        margin-top: 1rem;
-        font-size: large;
-        cursor: pointer;
-        transition: 0.2s ease all;
-        &:hover {
-          background: rgb(36, 159, 212);
-          transform: scale(1.1);
+      a{
+
+        button {
+          // width: 10rem;
+          border: none;
+          background: rgb(24, 172, 140);
+          color: white;
+          padding: 0.6rem 1rem;
+          margin-top: 1rem;
+          font-size: large;
+          cursor: pointer;
+          transition: 0.2s ease all;
+          &:hover {
+            background: rgb(36, 159, 212);
+            transform: scale(1.1);
+          }
         }
         &:nth-child(2) {
-          margin-left: 1rem;
-          background: rgb(247, 71, 147);
+          button{
+
+            margin-left: 1rem;
+            background: rgb(247, 71, 147);
+          }
         }
       }
     }
@@ -75,6 +81,45 @@
 }
 
 // MEDIA QUERIES
+
+
+@media only screen and (max-width: 768px) {
+  .Hero {
+    width: 100%;
+    padding: 0 1rem;
+    .left {
+      padding: 12px;
+      h1 {
+        font-size: 1.4rem;
+        letter-spacing: 0.2rem;
+        color: rgb(85, 190, 203);
+        font-family: "Poppins", sans-serif;
+        font-family: "Orbitron", sans-serif;
+        &::first-letter {
+          color: rgb(245, 60, 125);
+        }
+      }
+      .para {
+        p {
+          width: 100%;
+        }
+      }
+
+      .btns {
+        display: flex;
+        button {
+          font-size: small;
+          padding: .6rem 1rem;
+
+        }
+      }
+    }
+    .right {
+      // display: none;
+    }
+  }
+}
+
 @media only screen and (max-width: 446px) {
   .Hero {
     width: 100%;
@@ -92,8 +137,13 @@
 
       .btns {
         display: flex;
-        button {
-          font-size: small;
+        a{
+
+          button {
+            font-size: medium;
+            padding: .4rem 1rem;
+  
+          }
         }
       }
     }

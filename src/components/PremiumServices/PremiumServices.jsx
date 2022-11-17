@@ -1,6 +1,7 @@
 import React from "react";
 import Services from "../Services/Services";
 import "./PremiumServices.scss";
+import ban37 from "../../images/ban37.jpg"
 
 const PremiumServices = (props) => {
   const { heading, title, description, image, bg } = props;
@@ -14,6 +15,7 @@ const PremiumServices = (props) => {
         bannerText={description}
         banImage={image}
       />
+      <img className="bg" src={ban37} alt="" />
     </div>
   );
 };

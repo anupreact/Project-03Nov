@@ -7,10 +7,10 @@ import portablelamp from "../images/Products/portablelamp.png";
 import racket3 from "../images/Products/racket3.png";
 import pinplugs from "../images/Products/pinplugs.png";
 
-const productData = [
+export const productData = [
   {
     id: 1,
-    name: "Havells Fan",
+    name: "Havells Fan ",
     image: cFan,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis voluptates voluptate!",
@@ -73,4 +73,3 @@ const productData = [
     price: "1200 INR",
   },
 ];
-export default productData;

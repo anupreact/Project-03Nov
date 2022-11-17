@@ -37,9 +37,7 @@ const Products = (props) => {
                 <NavLink to={`/product/${id}`}>
                   <span className="name">{name}</span>
                 </NavLink>
-                <NavLink to={`/product/${id}`}>
-                  <span className="desc">{description}</span>
-                </NavLink>
+              
                 <span className="price">Price : {price}</span>
                 <NavLink to="/unavailable">
                   <button>Buy Now</button>

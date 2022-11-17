@@ -1,26 +1,37 @@
 .UnAvailable {
-  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 1.4rem;
-  padding:1rem;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
   background: rgb(255, 255, 255);
+
+  .img-container {
+    width: 300px;
+    height: 300px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
   p {
+
     width: 50%;
     text-align: center;
     margin: 1rem;
     font-size: 1.5rem;
-    color:rgb(255, 67, 130);
-    letter-spacing: .1rem;
+    color: rgb(255, 67, 130);
+    letter-spacing: 0.1rem;
   }
-  a{
+  a {
     text-decoration: none;
-    transition: .3s ease all;
-    letter-spacing: .1rem;
+    transition: 0.3s ease all;
+    letter-spacing: 0.1rem;
     text-align: center;
-    &:hover{
+    &:hover {
       text-decoration: underline;
     }
   }
@@ -28,7 +39,7 @@
     border: none;
     background: rgb(24, 172, 140);
     color: white;
-    padding:.3rem 1rem;
+    padding: 0.3rem 1rem;
     margin-top: 1rem;
     font-size: large;
     cursor: pointer;
@@ -42,13 +53,23 @@
 
 @media only screen and (max-width: 800px) {
   .UnAvailable {
-    height:100%;
-    p{
-      width: 87%;
-      font-size:1rem;
+    .img-container {
+      width: 140px;
+      height: 140px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
     }
-    a{
+    p {
+      width: 87%;
+      font-size: .9rem;
+    }
+    a {
       text-align: center;
+      font-size: .8rem;
+
     }
   }
 }

@@ -6,6 +6,12 @@ import icon2 from "../../images/contservice1.png";
 import icon3 from "../../images/contservice3.png";
 import emailjs from "@emailjs/browser";
 
+import contbg from "../../images/contbg.png"
+import bgimg from "../../images/bgimg.jpg"
+import ban33 from "../../images/ban33.jpg"
+import ban34 from "../../images/ban34.jpg"
+import ban35 from "../../images/ban35.jpg"
+
 const NewContact = () => {
   const contactServices = [
     {
@@ -72,7 +78,6 @@ const NewContact = () => {
   const handleChange = (e) => {
     let { name, value } = e.target;
 
-    console.log(name, value);
     setFormData({ ...formData, [name]: value });
   };
 
@@ -233,6 +238,7 @@ const NewContact = () => {
             </div>
           );
         })}
+        <img src={ban35} alt="" />
       </div>
     </div>
   );

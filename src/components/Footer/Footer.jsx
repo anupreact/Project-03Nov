@@ -1,30 +1,75 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Footer.scss";
+
+import facebook from "../../images/facebook.png";
+import insta from "../../images/insta.png";
+import linked from "../../images/linked.png";
+import tweet from "../../images/tweet.png";
+import telegram from "../../images/telegram.png";
 
 const Footer = () => {
   const socialLinks = [
     {
-      icon: "fa fa-facebook",
-      url: "http://facebook.com",
+      icon: facebook,
+      url: "https://www.facebook.com/Anand.kings786",
     },
     {
-      icon: "fa fa-instagram",
-      url: "http://facebook.com",
+      icon: insta,
+      url: "https://www.instagram.com/anand680/?igshid=YmMyMTA2M2Y%3D",
     },
     {
-      icon: "fa fa-google",
-      url: "http://facebook.com",
+      icon: linked,
+      url: "https://www.instagram.com/anand680/?igshid=YmMyMTA2M2Y%3D",
     },
     {
-      icon: "fa fa-linkedin",
-      url: "http://facebook.com",
+      icon: tweet,
+      url: "https://www.facebook.com/Anand.kings786",
     },
     {
-      icon: "fa fa-twitter",
-      url: "http://facebook.com",
+      icon: telegram,
+      url: "https://www.facebook.com/Anand.kings786",
     },
   ];
+
+  const companyLinks = [
+    {
+      name: "Services",
+      link: "services",
+    },
+    {
+      name: "Contact Us",
+      link: "contact",
+    },
+    {
+      name: "About Us",
+      link: "about",
+    },
+    {
+      name: "Careers",
+      link: "contact",
+    },
+  ];
+
+  const affiliateLinks = [
+    {
+      name: "Partner",
+      link: "services",
+    },
+    {
+      name: "Market",
+      link: "services",
+    },
+    {
+      name: "Products",
+      link: "products",
+    },
+    {
+      name: "Hire us",
+      link: "contact",
+    },
+  ];
+
   return (
     <>
       <footer className="footer">
@@ -36,21 +81,19 @@ const Footer = () => {
           </div>
           <div className="info">
             <span>
-            <i class="fa fa-certificate" aria-hidden="true"></i>
-
+              <i className="fa fa-certificate" aria-hidden="true"></i>
             </span>
             <span className="gst">GST No. 27CGWPR1898D1ZK</span>
-          </div> 
+          </div>
           <div className="info">
             <span>
-              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <i className="fa fa-envelope" aria-hidden="true"></i>
             </span>
             <span>ar.electricals007@gmail.com</span>
-          </div> 
+          </div>
           <div className="info">
             <span>
-            <i class="fa fa-phone-square" aria-hidden="true"></i>
-
+              <i className="fa fa-phone-square" aria-hidden="true"></i>
             </span>
             <span>9764921207 / 7709434879</span>
           </div>
@@ -58,9 +101,9 @@ const Footer = () => {
             {socialLinks.map((item, index) => {
               return (
                 <span key={index}>
-                  <Link to={`${item.url}`}>
-                    <i className={`${item.icon}`} aria-hidden="true"></i>
-                  </Link>
+                  <a href={`${item.url}`}>
+                    <img src={item.icon} alt="" />
+                  </a>
                 </span>
               );
             })}
@@ -69,21 +112,28 @@ const Footer = () => {
 
         <div className="linkss">
           <section className="mid-1">
-            <p>Pricing</p>
+            <p>Company</p>
             <div>
-              <span>Links</span>
-              <span>Links</span>
-              <span>Links</span>
-              <span>Links</span>
+              {companyLinks.map((item, index) => {
+                return (
+                  <span key={index}>
+                    <NavLink to={`/${item.link}`}>{item.name}</NavLink>
+                  </span>
+                );
+              })}
+            
             </div>
           </section>
           <section className="mid-2">
             <p>Affiliate</p>
             <div>
-              <span>Links</span>
-              <span>Links</span>
-              <span>Links</span>
-              <span>Links</span>
+            {affiliateLinks.map((item, index) => {
+                return (
+                  <span key={index}>
+                    <NavLink to={`/${item.link}`}>{item.name}</NavLink>
+                  </span>
+                );
+              })}
             </div>
           </section>
         </div>
@@ -95,14 +145,20 @@ const Footer = () => {
             we launch or add new products in our portfolio.
           </p>
           <input type="text" placeholder="Enter your email" />
-
-          <button>Subscribe</button>
+          <div className="btn">
+            <button>Subscribe</button>
+          </div>
         </section>
       </footer>
+
       <div className="disclaimer">
         <span>
           Copyright @ All Rights reserved 2022 | Made with{" "}
-          <span className="heart">❤ </span> by Anup
+          <span className="heart">❤ </span> by Anup &nbsp; |&nbsp;{" "}
+          <a href="https://react-dev-portfolio.000webhostapp.com/">
+            {" "}
+            Know more{" "}
+          </a>
         </span>
       </div>
     </>

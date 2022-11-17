@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Products from "../../components/Products/Products";
-import productData from "../../Data/productData";
+import {productData} from "../../Data/productData";
 import "./SingleProduct.scss";
 
 const SingleProduct = ({ match }) => {

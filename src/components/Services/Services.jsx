@@ -4,7 +4,6 @@ import services1 from "../../images/services1.png";
 import services2 from "../../images/services2.png";
 
 const Services = (props) => {
-  console.log(props);
   const { heading, row1, row2, bannerText, banImage, banTitle } = props;
 
   return (
@@ -21,7 +20,7 @@ const Services = (props) => {
           <div className="row-1">
             <div className="left">
               <p style={{ fontWeight: "bold" }}>
-                {banTitle ? banTitle : "Sales : Retail and Wholesale"}
+                {banTitle ? banTitle : "Sales : Retail and Wholesale."}
               </p>
               <p>
                 {bannerText ? (
@@ -30,8 +29,8 @@ const Services = (props) => {
                   <>
                     One Stop solution for all your Home Electrical/Electronics
                     Supplies and Services. We Provide all the essential
-                    electrical and electronics small home appliances and gadgets.
-                    &nbsp; <br />
+                    electrical and electronics small home appliances and
+                    gadgets. &nbsp; <br />
                     Usually deals in Light bulbs, LED'S, Wires, Cables,
                     Decorative Series, Celing Fans, Table Fans, Desert Coolers,
                     Gyesers, Home Electrical switches, Iron, Water Heaters &
@@ -60,9 +59,9 @@ const Services = (props) => {
                 provide Essential products service maintainence and Repairing.
                 We have a team of dedicated professional electricians who are
                 having tremendous experties in the field of home electrical &
-                electronics essentials.&nbsp; <br /> Having any plan to
-                reinnovate your Home electric fitting, Let us know we provide
-                Electrician hiring service as well.
+                electronics essentials.&nbsp; <br /> Having any plan to renovate
+                your Home electric fitting, Let us know we provide Electrician
+                hiring service as well.
               </p>
               <button>Get Started</button>
             </div>
