@@ -5,12 +5,16 @@ import icon1 from "../../images/contservice2.png";
 import icon2 from "../../images/contservice1.png";
 import icon3 from "../../images/contservice3.png";
 import emailjs from "@emailjs/browser";
+import {  message as m} from "antd";
 
 import contbg from "../../images/contbg.png"
 import bgimg from "../../images/bgimg.jpg"
 import ban33 from "../../images/ban33.jpg"
 import ban34 from "../../images/ban34.jpg"
 import ban35 from "../../images/ban35.jpg"
+
+const key = "updatable";
+
 
 const NewContact = () => {
   const contactServices = [
@@ -81,9 +85,30 @@ const NewContact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  // Loading Message
+  const openMessage = () => {
+    m.loading({
+      content: "Sending...",
+      key,
+    });
+    setTimeout(() => {
+      m.success({
+        content: "Message Sent successfully!",
+        key,
+        duration: 2,
+      });
+    }, 2000);
+  };
+  // Loading Message
+
+  const error = (text) => {
+    m.error(text, 2);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault()
     if (email !== "" && phone !== "") {
+      openMessage();
       const templateParams = {
         name: Name,
         email: email,
@@ -124,7 +149,7 @@ const NewContact = () => {
       }, 1000);
     }
     else{
-      alert("email and phone number is required")
+      error("email and phone number is required")
     }
   };
 

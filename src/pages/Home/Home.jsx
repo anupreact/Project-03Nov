@@ -13,6 +13,9 @@ import PremiumServices from "../../components/PremiumServices/PremiumServices";
 import Banners from "../../components/Banners/Banners";
 import premImage from "../../images/premium3.png"
 import {productData} from "../../Data/productData";
+import { Button, DatePicker } from 'antd';
+
+
 
 
 const Home = () => {
@@ -22,6 +25,10 @@ const Home = () => {
     // <div className="Home">
     <>
       <Carousal />
+
+
+
+
       <Banners/>
       <Services heading={"Our Services"} row1={true} row2={true} />
       <Categories heading={"Featured Categories"} />
