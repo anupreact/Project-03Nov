@@ -142,7 +142,7 @@ const About = () => {
                   {socialLinks.map((item, index) => {
                     return (
                       <div className="link" key={index}>
-                       <a href={`${item.url}`}> 
+                       <a target="_blank" rel="noreferrer" href={`${item.url}`}> 
                         <img src={item.icon} alt="" />
                        </a>
                       </div>

@@ -101,7 +101,7 @@ const Footer = () => {
             {socialLinks.map((item, index) => {
               return (
                 <span key={index}>
-                  <a href={`${item.url}`}>
+                  <a target="_blank" rel="noreferrer" href={`${item.url}`}>
                     <img src={item.icon} alt="" />
                   </a>
                 </span>
@@ -155,7 +155,7 @@ const Footer = () => {
         <span>
           Copyright @ All Rights reserved 2022 | Made with{" "}
           <span className="heart">❤ </span> by Anup &nbsp; |&nbsp;{" "}
-          <a href="https://react-dev-portfolio.000webhostapp.com/">
+          <a target="_blank" rel="noreferrer" href="https://anupmanwatkar.netlify.app/">
             {" "}
             Know more{" "}
           </a>

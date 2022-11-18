@@ -100,7 +100,7 @@ const NewContact = () => {
     }, 2000);
   };
   // Loading Message
-
+  
   const error = (text) => {
     m.error(text, 2);
   };
